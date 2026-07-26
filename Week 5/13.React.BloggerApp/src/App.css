@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.section {
+  width: 300px;
+  padding: 20px;
+  min-height: 400px;
+}
+
+.section:not(:last-child) {
+  border-right: 4px solid green;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
