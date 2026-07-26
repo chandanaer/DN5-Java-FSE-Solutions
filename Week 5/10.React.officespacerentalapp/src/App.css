@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+.office-container {
+  text-align: center;
+  width: 500px;
+  margin: 30px auto;
+}
+
+.office-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
