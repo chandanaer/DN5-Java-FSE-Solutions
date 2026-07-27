@@ -1,0 +1,2 @@
+Git Branching and Merging Exercise
+This line was added in GitNewBranch
