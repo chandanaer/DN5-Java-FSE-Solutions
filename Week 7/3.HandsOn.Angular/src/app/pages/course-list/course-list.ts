@@ -1,0 +1,44 @@
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { CourseCard } from '../../components/course-card/course-card';
+
+@Component({
+  selector: 'app-course-list',
+  standalone: true,
+  imports: [CommonModule, CourseCard],
+  templateUrl: './course-list.html',
+  styleUrl: './course-list.css'
+})
+export class CourseList {
+
+  selectedCourseId: number | null = null;
+
+  courses = [
+    {
+      id: 1,
+      name: 'Angular',
+      code: 'ANG101',
+      credits: 4,
+      gradeStatus: 'Passed'
+    },
+    {
+      id: 2,
+      name: 'Java',
+      code: 'JAVA201',
+      credits: 3,
+      gradeStatus: 'Failed'
+    },
+    {
+      id: 3,
+      name: 'Spring Boot',
+      code: 'SPR301',
+      credits: 4,
+      gradeStatus: 'Pending'
+    }
+  ];
+
+  onEnroll(courseId: number) {
+    this.selectedCourseId = courseId;
+  }
+
+}

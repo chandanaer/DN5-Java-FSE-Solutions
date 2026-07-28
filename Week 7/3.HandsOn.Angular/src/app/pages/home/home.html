@@ -1,0 +1,16 @@
+<section class="home">
+  <h1>Student Course Portal</h1>
+
+  <button (click)="enrollNow()">
+    Enroll Now
+  </button>
+
+  <br><br>
+
+  <input
+    type="text"
+    placeholder="Search course"
+    [(ngModel)]="searchText">
+
+  <p>Searching for: {{ searchText }}</p>
+</section>
